@@ -7,15 +7,15 @@ int NumberB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число");
 int NumberC = Convert.ToInt32(Console.ReadLine());
 
-if (NumberA > NumberB & NumberA > NumberC)
+int max = NumberA;
+
+if (NumberB > max)
 {
-    Console.WriteLine("Наибольшее число: " + NumberA);
+    max = NumberB;
 }
-else if (NumberB > NumberA & NumberB > NumberC)
+if (NumberC > max)
 {
-    Console.WriteLine("Наибольшее число: " + NumberB);
+    max = NumberC;
 }
-else
-{
-    Console.WriteLine("Наибольшее число: " + NumberC);
-}
+
+Console.WriteLine($"Наибольшее число: {max}");
