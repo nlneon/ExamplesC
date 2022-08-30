@@ -43,12 +43,12 @@ void FindESum(int[,] arr)
             sum += arr [column, row];
             mid_result = sum /arr.GetLength(0);
         }
-        Console.WriteLine($"Среднее арифметическое {row+1} столбца = {mid_result}");
+        Console.WriteLine($"Среднее арифметическое {row+1} столбца = {Math.Round(mid_result, 1)}");
         sum=0;
     }
 }
 
-int[,] array = CreateMatrix(5, 4, 1, 9);
+int[,] array = CreateMatrix(3, 4, 1, 9);
 PrintMatrix(array);
 Console.WriteLine();
 FindESum(array);
