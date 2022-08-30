@@ -26,7 +26,7 @@ void PrintMatrix(double[,] arr)
     {
         for (int column = 0; column < arr.GetLength(1); column++)
         {
-            Console.Write($"{Math.Round(arr[row, column], 1)}\t");
+            Console.Write($"{arr[row, column]:f1}\t");
         }
         Console.WriteLine();
     }

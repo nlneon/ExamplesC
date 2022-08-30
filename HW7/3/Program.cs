@@ -43,7 +43,7 @@ void FindESum(int[,] arr)
             sum += arr [row, column];
             mid_result = sum /arr.GetLength(0);
         }
-        Console.WriteLine($"Среднее арифметическое {column+1} столбца = {Math.Round(mid_result, 1)}");
+        Console.WriteLine($"Среднее арифметическое {column+1} столбца = {Math.Round(mid_result, 1)}"); // Math.Round сделал, как альтернативу :f1
         sum=0;
     }
 }
