@@ -36,14 +36,14 @@ void FindESum(int[,] arr)
 {
     double mid_result = 0;
     double sum = 0;
-    for (int row = 0; row < arr.GetLength(1); row++)
+    for (int column = 0; column < arr.GetLength(1); column++)
     {
-        for (int column = 0; column < arr.GetLength(0); column++)
+        for (int row = 0; row < arr.GetLength(0); row++)
         {
-            sum += arr [column, row];
+            sum += arr [row, column];
             mid_result = sum /arr.GetLength(0);
         }
-        Console.WriteLine($"Среднее арифметическое {row+1} столбца = {Math.Round(mid_result, 1)}");
+        Console.WriteLine($"Среднее арифметическое {column+1} столбца = {Math.Round(mid_result, 1)}");
         sum=0;
     }
 }
